@@ -29,3 +29,8 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+
+#adding the coverage directory for iteration 4
+/coverage/coverage
+echo "coverage" >> .gitignore

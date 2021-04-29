@@ -33,8 +33,11 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-#Boostrap
+# Boostrap
 gem 'bootstrap', '~> 5.0.0.beta2'
+
+# Miniracer  Iteration 4
+gem 'mini_racer'
 
 # Jquery
 gem 'jquery-rails'
@@ -45,6 +48,9 @@ gem 'friendly_id', '~> 5.4.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+#SimpleCov Iteration 4
+gem 'simplecov', require: false
+
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
   gem 'rails_12factor'
@@ -54,6 +60,9 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3'
+  # Rspec and Capy  Iteration 4
+  gem 'rspec-rails', '~> 3.7'
+  gem 'capybara'
 end
 
 group :development do
@@ -67,10 +76,13 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
+  # gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+
+  #added from iteration4
+  gem 'simplecov', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
