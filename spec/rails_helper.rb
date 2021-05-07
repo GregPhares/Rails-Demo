@@ -69,3 +69,18 @@ SimpleCov.start 'rails' do
   add_filter '/db/'
   add_filter '/spec/' # for rspec
 end
+
+
+# Added for Iteration 5
+require 'rspec/rails'
+require 'devise'
+require_relative 'support/controller_macros'
+RSpec.configure do |config|
+  # For Devise > 4.1.1
+  config.include Devise::Test::ControllerHelpers, type: :controller
+  config.include Devise::Test::IntegrationHelpers, type: :request
+  # Use the following instead if you are on Devise <= 4.1.1
+  # config.include Devise::TestHelpers, :type => :controller
+  config.include FactoryBot::Syntax::Methods
+  config.extend ControllerMacros, :type => :controller
+end

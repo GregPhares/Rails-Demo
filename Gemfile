@@ -51,6 +51,10 @@ gem 'bootsnap', '>= 1.1.0', require: false
 #SimpleCov Iteration 4
 gem 'simplecov', require: false
 
+# Authentication
+# Add for Iteration 5
+gem 'devise'
+
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
   gem 'rails_12factor'
@@ -81,8 +85,12 @@ group :test do
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
 
+  # Iteration 5 add 
+  gem 'factory_bot_rails'
+
   #added from iteration4
-  gem 'simplecov', require: false
+  #gem 'simplecov', require: false
+  gem 'simplecov', require: false, group: :test
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

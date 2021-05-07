@@ -7,13 +7,29 @@
 require 'rails_helper'
 
 RSpec.feature "Post", type: :feature do
-  context "Create new post" do
-    before(:each) do
-      visit new_post_path
-      within("form") do
-        fill_in "Title", with: "Test title"
+  # context "Create new post" do
+  #   before(:each) do
+  #     visit new_post_path
+  #     within("form") do
+  #       fill_in "Title", with: "Test title"
+  #     end
+  #   end
+
+
+    context "Create new post" do
+      before(:each) do
+        visit root_path
+        click_link "Log in"
+        click_link "Sign up"
+        fill_in "Email", with: "gphares@uccs.edu"
+        fill_in "Password", with: "123456"
+        fill_in "Password confirmation", with: "123456"
+        click_button "Sign up"
+        visit new_post_path
+        within("form") do
+          fill_in "Title", with: "Test title"
+        end
       end
-    end
 
     scenario "should be successful" do
       fill_in "Description", with: "Test description"

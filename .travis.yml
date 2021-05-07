@@ -10,3 +10,13 @@ before_install:
 
 script:
  - bundle exec rspec
+
+# Iteration 5 addition
+
+deploy:
+ provider: heroku
+ api_key: c05933e5-e6c5-4f7e-b9c9-e79387943d02
+ app: vast-everglades-96230
+ run: "rake db:migrate"
+ on:
+  all_branches: true
