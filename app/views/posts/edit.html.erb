@@ -1,63 +1,6 @@
-<table>
-  <thead>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-  </thead>
-
-  <tbody>
-    <div class="jumbotron text-center">
-    <div class="container">
-    <div class="text-center">
- 
-    <div class="col-sm-8">
-    <h1><% provide(:page_title, "Edit#{@post.title}") %></h1>
-    </div>
-    <div class="col-sm-4">
-            <br>
-            <br>
-
-
-
-        </div>
-  </div>
-</div>
-<div class="container">
-<div align="left">
+<% provide(:page_title, "Edit#{@post.title}") %>
 <h1>Editing Post</h1>
 
 <%= render 'form', post: @post %>
-
-<%= link_to '<button type="button" class="btn btn-secondary"> Show </button>'.html_safe,  @post %>
-<%= link_to '<button type="button" class="btn btn-secondary"> Back </button>'.html_safe,   posts_path %>
-</div>
-</div>
-
-</tbody>
-</table>
-
-
-
-<style>
-.bg-4 {
-  background-color: #2f2f2f;
-  color: #ffffff;
-}
-</style>
-
-<footer class="text-center text-white fixed-bottom" style="background-color: #21081a;">
-  <!-- Grid container -->
-  <div class="container p-4"></div>
-  <!-- Grid container -->
-
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    <a class="text-white" href="https://www.linkedin.com/in/gregory-phares-86a07320a/">LinkedIn Profile</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-
+<%= link_to 'Show', @post %> |
+<%= link_to 'Back', posts_path %>
