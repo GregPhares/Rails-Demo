@@ -123,13 +123,13 @@
               <%= link_to '<button type="button" class="btn btn-secondary"> Delete </button>'.html_safe, post, method: :delete, data: { confirm: 'Are you sure?' } %>
               <% end %>
 
-              <%= link_to '<button type="button" class="btn btn-secondary"> More </button>'.html_safe, post %>
-              <%= link_to '<button type="button" class="btn btn-secondary"> Edit </button>'.html_safe, edit_post_path(post) %>
-              <%= link_to '<button type="button" class="btn btn-secondary"> Delete </button>'.html_safe, post, method: :delete, data: { confirm: 'Are you sure?' } %>
               </div>
             </div>
           </div>
               
+          <%= link_to '<button type="button" class="btn btn-secondary"> More </button>'.html_safe, post %>
+          <%= link_to '<button type="button" class="btn btn-secondary"> Edit </button>'.html_safe, edit_post_path(post) %>
+          <%= link_to '<button type="button" class="btn btn-secondary"> Delete </button>'.html_safe, post, method: :delete, data: { confirm: 'Are you sure?' } %>
             <%end%>
             
         </div>
