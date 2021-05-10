@@ -107,7 +107,7 @@
             
             <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=#<%= post.title%> aria-expanded="false" aria-controls=<%= post.title%>>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=#<%= post.title%> aria-expanded="true" aria-controls=<%= post.title%>>
               <%= post.title%>
               </button>
             </h2>
@@ -127,9 +127,7 @@
             </div>
           </div>
               
-          <%= link_to '<button type="button" class="btn btn-secondary"> More </button>'.html_safe, post %>
-          <%= link_to '<button type="button" class="btn btn-secondary"> Edit </button>'.html_safe, edit_post_path(post) %>
-          <%= link_to '<button type="button" class="btn btn-secondary"> Delete </button>'.html_safe, post, method: :delete, data: { confirm: 'Are you sure?' } %>
+
             <%end%>
             
         </div>
