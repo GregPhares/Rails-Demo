@@ -5,8 +5,9 @@
 ## Table of Contents
 * [Iteration 1](#iteration-1)
 * [Iteration 2](#iteration-2)
-* [Iteration 3](#iteation-3)
-* [Iteration 4 & 5](#iteration-4-&-5)
+* [Iteration 3](#iteration-3)
+* [Iteration 4](#iteration-4)
+* [Iteration 5](#iteration-5)
 
 ## Iteration 1
 - Create a GitHub repo for project.
@@ -23,7 +24,7 @@
 - Create scoffolding in Rails with Docker.
 - Initial Push to Heroku, to have scaffolding live.
 
-## Iteration 4
+## Iteration 4 
 - Write Unit Testing, have 70%+ code coverage.
 - Create CI/CD Pipeline using Travis-CI.
 
