@@ -15,6 +15,6 @@
 - Create 5 lo-fi diagrams for the project
 
 
-## Iteation 2
+## Iteration 2
 - Create UMl Diagram that will be implemented into the project.
 
